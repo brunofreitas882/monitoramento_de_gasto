@@ -1,13 +1,27 @@
 package entities;
 
 public class Produto {
-	public String nome;
-	public double preco;
-	public int quantidade;
+	private String nome;
+	private double preco;
+	private int quantidade;
 	
-	public Produto(){
+	/*Constutores...*/
+	
+	/*Costrutor Padrão*/
+	/*-----------------------------------------------------------*/
+	
+	public Produto() {
 		
 	}
+	
+	/*Costrutores Personalizados (com sobrecarga)*/
+	/*-----------------------------------------------------------*/
+	
+	public Produto(String nome, double preco) {
+		this.nome = nome;
+		this.preco = preco;
+		
+	} 
 	
 	public Produto(String nome, double preco, int quantidade) {
 		this.nome = nome;
@@ -15,9 +29,39 @@ public class Produto {
 		this.quantidade = quantidade;
 	}
 	
+	
+	/*Gets e Sets*/
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	public double getpreco() {
+		return preco;
+	}
+	
+	public void setquantidade(int quantidade) {
+		this.quantidade = quantidade;
+	}
+	public double getquantidade() {
+		return quantidade;
+	}
+	
+	/*Métodos*/
+	/*-----------------------------------------------------------*/
+	
 	public double valorTotalEmEstoque() {
 		return preco * quantidade;
 	}
+	
 	
 	public void addProduto(int quantidade) {
 		this.quantidade += quantidade;      /* +=: Encremento */

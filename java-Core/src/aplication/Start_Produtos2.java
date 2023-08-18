@@ -30,8 +30,8 @@ public class Start_Produtos2 {
 		System.out.println();
 		
 		System.out.print("Insira o número de produtos a serem adicionados ao estoque: ");
-		int quantidade = sc.nextInt();
-		produto.addProduto(quantidade);
+		int quantidade1 = sc.nextInt();
+		produto.addProduto(quantidade1);
 		
 		System.out.println();
 		System.out.println("Dados atualizados: " + produto);
@@ -39,7 +39,7 @@ public class Start_Produtos2 {
 		
 		System.out.print("Insira o número de produtos a serem removidos do estoque: ");
 		quantidade = sc.nextInt();
-		produto.removeProduto(quantidade);
+		produto.removeProduto(quantidade1);
 		System.out.println();
 		
 		System.out.println("Dados atualizados:: " + produto);
