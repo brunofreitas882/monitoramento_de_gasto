@@ -34,6 +34,9 @@ public class Start_Deslocamento {
 		
 		System.out.printf("A distancia é: %.2f", deslocamento.calculadoraDistancia());
 		System.out.printf("%nO tempo de deslocamento é: %.2f", deslocamento.calcularTempoDeslocamento());
+		
+		sc.close();
+		
 	}
 
 }
