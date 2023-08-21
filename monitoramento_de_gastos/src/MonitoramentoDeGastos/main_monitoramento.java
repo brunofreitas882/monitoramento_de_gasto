@@ -11,6 +11,8 @@ public class main_monitoramento {
 		Scanner sc = new Scanner (System.in);
 		
 		ClassMonitoramento monitoramento = new ClassMonitoramento();
+		
+
 		monitoramento.menu(0, 0);
 	}
 

@@ -22,7 +22,7 @@ public class ClassMonitoramento {
 	public void cadastDispesa(double valor) {
 		if (saldo >= valor){
 		saldo -= valor;
-		System.out.printf(objeto , " dispesa cadastrada com sucesso!");
+		System.out.printf(objeto + " dispesa cadastrada com sucesso!");
 		
 		} else {
 			System.out.println("você não tem saldo!");
@@ -32,11 +32,13 @@ public class ClassMonitoramento {
 	public void menu(int x, double valor) {
 		Scanner sc = new Scanner(System.in);
 		
-			System.out.println("1 - Cadastrar Saldo");
-			System.out.println("2 - Cadastro de Despesa");
-			System.out.println("3 - Vizualizar Saldo");
-			System.out.println("0 - Sair");
-			System.out.println("R=");
+		do {
+			
+			System.out.printf("%n1 - Cadastrar Saldo");
+			System.out.printf("%n2 - Cadastro de Despesa");
+			System.out.printf("%n3 - Vizualizar Saldo");
+			System.out.printf("%n0 - Sair");
+			System.out.printf("%nR=");
 			x = sc.nextInt();
 			
 			
@@ -54,24 +56,24 @@ public class ClassMonitoramento {
 				break;
 			}
 			case 2: {
-				System.out.println("digite o nome sua dispesa:  ");
+				System.out.println("digite o nome da sua dispesa:  ");
 				objeto = sc.next();
 				System.out.println("Digite o valor da sua dispesa: ");
 				valor = sc.nextDouble();
-				cadastDispesa(valor);
+				cadastDispesa(saldo);
+				
 				break;
 			}
 			case 3: {
 				saldoatual();
-			}
-			case 4:{
-				System.out.println("digite de um numero de 0 a 3!!!");	
+				break;
 			}
 			default:
-				
+					System.out.println("digite de um numero de 0 a 3!!!");
+					break;
 			}
 		
-		
-		
+			
+		}while(x != 0);
 	}
 }
