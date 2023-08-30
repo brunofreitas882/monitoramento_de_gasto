@@ -33,7 +33,14 @@ public class ClassMonitoramento {
 		Scanner sc = new Scanner(System.in);
 		
 		do {
-			
+			System.out.println("---------------------|\r\n"
+					+ "                     |\r\n"
+					+ "                     |\r\n"
+					+ "                     |\r\n"
+					+ "                     |\r\n"
+					+ "                     |                     \r\n"
+					+ "                     |\r\n"
+					+ "---------------------|");
 			System.out.printf("%n1 - Cadastrar Saldo");
 			System.out.printf("%n2 - Cadastro de Despesa");
 			System.out.printf("%n3 - Vizualizar Saldo");

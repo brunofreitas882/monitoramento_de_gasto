@@ -45,8 +45,6 @@ public class Conta {
 	}
 	
 	//método toString sobrecarregado.
-	
-	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
 		return "Conta: " + numeroConta + "\nproprietário: " + donoConta + String.format("\nSaldo da conta: %.2f", saldoConta);
