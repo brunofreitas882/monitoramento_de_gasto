@@ -17,7 +17,8 @@ public class Listas {
 		// Implementar lista tipo String
 		List<String> lista = new ArrayList<>();
 		
-		// Adicionar elementos a lista
+		System.out.println("-------------Adicionar elementos a lista.-------------------------");
+		// Adicionar elementos a lista.
 		lista.add("Matemática");// 0
 		lista.add("Física");// 1
 		lista.add("Biologia");// 2
@@ -31,7 +32,7 @@ public class Listas {
 			System.out.println(materias);
 		}
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("-------------Inserir elemento entre um nodo.-------------------------");
 		// Inserir elemento entre um nodo.
 		lista.add(3, "Química");
 		lista.add("Inglês");// 6
@@ -40,12 +41,12 @@ public class Listas {
 			System.out.println(materias);
 		}
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("------------------Verificar o tamanho da lista.-----------------");
 		// Verificar o tamanho da lista.
 		System.out.println("A lista possui um tamanho de " + lista.size() + " posições.");
 		System.out.println(lista.get(3));
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("----------------Remover elemento da lista.---------------------");
 		// Remover elemento da lista.
 		lista.remove(2);
 		lista.remove("Física");
@@ -53,9 +54,24 @@ public class Listas {
 			System.out.println(materias);
 		}
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("------------------Listar a posição de um elemento.---------------------");
 		// Listar a posição de um elemento.
 		System.out.println("Index de inglês: " + lista.indexOf("Inglês"));
+		
+		
+		System.out.println("------------------Trabalhar com predicado.---------------------");
+		// Trabalhar com predicado.
+		// remover todos os elementos que iniciem com letra G.
+		// Para remover um elemento utilizamdo predicado, usando o método removeIf.
+		
+		lista.removeIf(disciplina -> disciplina.charAt(0) == 'G');
+		lista.removeIf(disciplina -> disciplina.charAt(4) == 'm');
+		lista.removeIf(disciplina -> disciplina.charAt(5) == 'm');
+		
+		for (String materias : lista) {
+			System.out.println(materias);
+		}
+		
 		
 	}
 
