@@ -33,7 +33,7 @@ public class Start_Biblioteca {
         List<String> titulos = livros.getTitulos();
         
         for (String titulo : titulos) {
-			System.out.println(titulos);
+			System.out.println(titulo);
 		} 
         
         

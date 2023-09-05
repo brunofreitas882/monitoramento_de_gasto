@@ -18,7 +18,10 @@ public class Start_Pedido {
 		
 		StatusPedido pedido2 = StatusPedido.ENTREGUE;
 		
+		StatusPedido pedido3 = StatusPedido.valueOf("ENTREGANDO");
 		
+		System.out.println(pedido2);
+		System.out.println(pedido3);
 		
 		
 	}
